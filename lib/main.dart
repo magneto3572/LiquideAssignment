@@ -5,6 +5,7 @@ import 'package:liquide_assignment/login/data/source/login_local_data_source.dar
 import 'package:liquide_assignment/login/data/source/login_remote_data_source.dart';
 import 'package:liquide_assignment/login/domain/repository/login_repository.dart';
 import 'package:liquide_assignment/login/presentation/bloc/login_bloc.dart';
+import 'package:liquide_assignment/login/presentation/screen/login_page.dart';
 import 'core/network/network_info.dart';
 import 'login/data/impl/login_repository_impl.dart';
 import 'login/presentation/bloc/login_event.dart';
@@ -136,7 +137,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
           useMaterial3: true,
         ),
-        home: HomePage(),
+        home: LoginPage(),
       ),
     );
   }
